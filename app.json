@@ -1,0 +1,168 @@
+{
+	"metadata": {
+		"type": "App"
+	},
+	"project": {
+		"shadows": true,
+		"shadowType": 1,
+		"vr": false,
+		"physicallyCorrectLights": false,
+		"toneMapping": 0,
+		"toneMappingExposure": 1
+	},
+	"camera": {
+		"metadata": {
+			"version": 4.5,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"object": {
+			"uuid": "44015F5E-FCEF-4FC2-92A3-F555E5D11864",
+			"type": "PerspectiveCamera",
+			"name": "Camera",
+			"layers": 1,
+			"matrix": [0.992198,0,0.124675,0,0.051252,0.911596,-0.407881,0,-0.113653,0.411088,0.904483,0,-4.206635,12.70337,27.917701,1],
+			"fov": 50,
+			"zoom": 1,
+			"near": 0.01,
+			"far": 1000,
+			"focus": 10,
+			"aspect": 0.62013,
+			"filmGauge": 35,
+			"filmOffset": 0
+		}
+	},
+	"scene": {
+		"metadata": {
+			"version": 4.5,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"geometries": [
+			{
+				"uuid": "6990F529-C723-46FF-AF3F-E3210D0003D9",
+				"type": "SphereGeometry",
+				"radius": 2,
+				"widthSegments": 30,
+				"heightSegments": 20,
+				"phiStart": 0,
+				"phiLength": 6.283185,
+				"thetaStart": 0,
+				"thetaLength": 3.141593
+			},
+			{
+				"uuid": "100FDF03-8F15-405D-B6A9-67A5C303811A",
+				"type": "SphereGeometry",
+				"radius": 1,
+				"widthSegments": 30,
+				"heightSegments": 20,
+				"phiStart": 0,
+				"phiLength": 6.283185,
+				"thetaStart": 0,
+				"thetaLength": 3.141593
+			}],
+		"materials": [
+			{
+				"uuid": "50668455-20F6-4AC6-A769-BE40463A3FA5",
+				"type": "MeshStandardMaterial",
+				"color": 16777215,
+				"roughness": 1,
+				"metalness": 0,
+				"emissive": 0,
+				"envMapIntensity": 1,
+				"refractionRatio": 0.98,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			},
+			{
+				"uuid": "3084F53A-54FB-40A1-ACDF-244DC85B8908",
+				"type": "MeshStandardMaterial",
+				"color": 16777215,
+				"roughness": 1,
+				"metalness": 0,
+				"emissive": 0,
+				"envMapIntensity": 1,
+				"refractionRatio": 0.98,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			}],
+		"object": {
+			"uuid": "D97F8177-A112-4B91-ACCC-0EF08934ED25",
+			"type": "Scene",
+			"name": "Scene",
+			"layers": 1,
+			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+			"children": [
+				{
+					"uuid": "C012CA85-DD18-484E-8A06-5EAE7260FDD9",
+					"type": "Mesh",
+					"name": "Earth",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,-1.055841,-0.073521,-0.099257,1],
+					"geometry": "6990F529-C723-46FF-AF3F-E3210D0003D9",
+					"material": "50668455-20F6-4AC6-A769-BE40463A3FA5",
+					"children": [
+						{
+							"uuid": "DFC5B3B5-1E74-42B2-9577-BAEDC986B03B",
+							"type": "Mesh",
+							"name": "Moon",
+							"layers": 1,
+							"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,5.888244,0.019528,-0.006032,1],
+							"geometry": "100FDF03-8F15-405D-B6A9-67A5C303811A",
+							"material": "3084F53A-54FB-40A1-ACDF-244DC85B8908"
+						}]
+				},
+				{
+					"uuid": "7594BA03-E8F2-45BE-A32C-3CEF0CFDB3D7",
+					"type": "DirectionalLight",
+					"name": "DirectionalLight",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,5,10,7.5,1],
+					"color": 16777215,
+					"intensity": 1,
+					"shadow": {
+						"camera": {
+							"uuid": "B0EB535E-BA57-499C-84DD-DC007731BE27",
+							"type": "OrthographicCamera",
+							"layers": 1,
+							"zoom": 1,
+							"left": -5,
+							"right": 5,
+							"top": 5,
+							"bottom": -5,
+							"near": 0.5,
+							"far": 500
+						}
+					}
+				}],
+			"background": 0
+		}
+	},
+	"scripts": {
+		"C012CA85-DD18-484E-8A06-5EAE7260FDD9": [
+			{
+				"name": "EARTH",
+				"source": "function update( event ) {this.rotation.y += 0.01}"
+			}]
+	}
+}
